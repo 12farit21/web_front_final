@@ -13,9 +13,9 @@ document.getElementById('apply-filters-btn').addEventListener('click', function 
         var isSearchMatch = title.includes(searchQuery);
 
         if (isCategoryMatch && isSearchMatch) {
-            product.style.display = 'block'; // Показываем товар
+            product.style.display = 'block';
         } else {
-            product.style.display = 'none'; // Скрываем товар
+            product.style.display = 'none';
         }
     });
 });
