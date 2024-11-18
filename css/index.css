@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.navbar {
+    background-color: #333; 
+}
+
+.navbar a {
+    color: white; 
+}
+
+.navbar a:hover {
+    color: #FFD700; 
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section,
+.section {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 140px;
+}
+
+aside,
+.aside-section {
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #555;
+}
+
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+}
+
+body.night-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.night-theme .menu-item {
+    background-color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.line {
+    width: 25px; 
+    height: 3px; 
+    background-color: white; 
+    border-radius: 5px; 
+}
