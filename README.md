@@ -13,9 +13,12 @@ This project demonstrates a web application with:
    - Toggle Light/Dark Mode, with preference saved in `localStorage`.
 3. **Filter Persistence**
    - Saves the selected filter option on the `product.html` page, which is reapplied on future visits.
-
+4. **External API Integration**
+   - Added Google map API
 ## Design
 The application is designed for responsiveness and ease of use. Each page has a consistent color scheme and typography for a cohesive look.
+User interaction has been improved, with animated effects on buttons. 
+For example developed hover effects effects such as growing shadows, ripple effects, or rotating icons.
 
 ## Usage
 1. **Login:** Enter a username in the form and click "Login." The username will be displayed, and login status is preserved.
