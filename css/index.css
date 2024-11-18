@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding-bottom: 60px;
+    
 }
 
 header {
@@ -125,4 +125,9 @@ button:hover {
 .spin-svg {
     display: inline-block;
     animation: spin 2s linear infinite;
+}
+
+.night-theme aside,
+.aside-section {
+    background-color: #525252;
 }

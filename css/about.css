@@ -16,7 +16,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding-bottom: 60px;
+    
 }
 
 header {
@@ -113,4 +113,9 @@ button:hover {
     height: 3px; 
     background-color: white; 
     border-radius: 5px; 
+}
+
+.night-theme aside,
+.aside-section {
+    background-color: #525252;
 }

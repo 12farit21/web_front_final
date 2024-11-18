@@ -21,3 +21,6 @@ The application is designed for responsiveness and ease of use. Each page has a 
 1. **Login:** Enter a username in the form and click "Login." The username will be displayed, and login status is preserved.
 2. **Toggle Theme:** Use the "Toggle Light/Dark Mode" button to switch themes. The selected theme persists across sessions.
 3. **Filtering Products:** On the `product.html` page, select a filter option to view specific categories. The selected filter will be saved for future visits.
+
+
+## Link to hosted page - 

@@ -1,0 +1,78 @@
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profileLabel {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #495057;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.profileLabel::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 15%;
+    width: 80%;
+    height: 3px;
+    background-color: #495057;
+}
+
+.profile-info {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.profile-info strong {
+    color: #007bff;
+}
+
+.row-cols-2 .col, .row-cols-3 .col {
+    padding: 10px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row b5-col {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.col-2 strong{
+    font-size: 1.5rem;
+}
+
+.col-3 span{
+    font-size: 1.5rem;
+}
+
+#userName {
+    white-space: nowrap;
+    width: auto;
+}
+
+.night-theme .info{
+    color: #dfdfdf;
+}
+.night-theme .profile-container{
+    background-color: #636161;
+}
+.night-theme .profileLabel{
+    color: #dfdfdf;
+}
+.night-theme .profileLabel::after{
+    background-color: #dfdfdf;
+}

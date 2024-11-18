@@ -19,39 +19,9 @@ toggleThemeButton.addEventListener('click', () => {
     localStorage.setItem('theme', theme);
 });
 
-// const loginForm = document.querySelector('#login-form');
-// const logoutButton = document.querySelector('#logout-button');
-// const usernameDisplay = document.querySelector('#username-display');
-
-// const storedUsername = localStorage.getItem('username');
-// if (storedUsername) {
-//     usernameDisplay.textContent = `Welcome, ${storedUsername}!`;
-//     loginForm.style.display = 'none';
-//     logoutButton.style.display = 'block';
-// } else {
-//     loginForm.style.display = 'block';
-//     logoutButton.style.display = 'none';
-// }
-
-// loginForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     const username = document.querySelector('#username').value;
-//     localStorage.setItem('username', username);
-//     usernameDisplay.textContent = `Welcome, ${username}!`;
-//     loginForm.style.display = 'none';
-//     logoutButton.style.display = 'block';
-// });
-
-// logoutButton.addEventListener('click', () => {
-//     localStorage.removeItem('username');
-//     usernameDisplay.textContent = '';
-//     loginForm.style.display = 'block';
-//     logoutButton.style.display = 'none';
-// });
-
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Регистрация
+
     const registrationForm = document.getElementById('registrationForm');
     if (registrationForm) {
         registrationForm.addEventListener('submit', (e) => {
@@ -77,11 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem(email, JSON.stringify(user));
 
             alert('Registration successful! You can now log in.');
-            window.location.href = 'sign-in.html'; // Переход на страницу входа
+            window.location.href = 'sign-in.html'; 
         });
     }
 
-    // Вход
+
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', (e) => {
@@ -102,15 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Сохраняем информацию о текущем пользователе в sessionStorage
+      
             sessionStorage.setItem('loggedInUser', loginEmail);
 
             alert('Login successful!');
-            window.location.href = 'index.html'; // Редирект на домашнюю страницу
+            window.location.href = 'index.html'; 
         });
     }
 
-    // Отображение имени пользователя после входа
+  
     const userNameLink = document.getElementById('userNameLink');
     if (userNameLink) {
         const loggedInUser = sessionStorage.getItem('loggedInUser');
@@ -118,12 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const user = JSON.parse(localStorage.getItem(loggedInUser));
             if (user) {
                 userNameLink.textContent = user.name;
-                userNameLink.style.display = 'inline'; // Показываем ссылку с именем
+                userNameLink.style.display = 'inline'; 
             }
         }
     }
 
-    // Ссылки для перехода между страницами
+   
     const goToLogin = document.getElementById('goToLogin');
     const goToRegistration = document.getElementById('goToRegistration');
 
@@ -144,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Проверяем, если пользователь авторизован
+    
     const userNameLink = document.getElementById('userNameLink');
     const logoutButton = document.getElementById('logoutButton');
     const signinButton = document.getElementById('signinButton');
@@ -154,25 +124,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loggedInUser) {
         const user = JSON.parse(localStorage.getItem(loggedInUser));
         if (user) {
-            // Показываем имя пользователя
+            
             userNameLink.textContent = user.name;
-            userNameLink.style.display = 'inline'; // Показываем ссылку с именем пользователя
+            userNameLink.style.display = 'inline'; 
             logoutButton.style.display = 'inline';
             signinButton.style.display = 'none';
             signupButton.style.display = 'none';
         }
 
-        // Обработчик выхода
+        
         if (logoutButton) {
             logoutButton.addEventListener('click', () => {
-                sessionStorage.removeItem('loggedInUser'); // Удаляем данные о пользователе из sessionStorage
-                userNameLink.style.display = 'none'; // Скрываем ссылку с именем пользователя
+                sessionStorage.removeItem('loggedInUser'); 
+                userNameLink.style.display = 'none'; 
                 alert('You have logged out.');
-                window.location.href = 'sign-in.html'; // Перенаправляем на страницу входа
+                window.location.href = 'sign-in.html'; 
             });
         }
     } else {
-        // Если пользователь не авторизован, скрыть кнопку выхода и ссылку на профиль
+        
         userNameLink.style.display = 'none';
     }
 });
