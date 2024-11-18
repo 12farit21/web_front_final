@@ -23,4 +23,4 @@ The application is designed for responsiveness and ease of use. Each page has a 
 3. **Filtering Products:** On the `product.html` page, select a filter option to view specific categories. The selected filter will be saved for future visits.
 
 
-## Link to hosted page - https://12farit21.github.io/web_front_final/contact.html
+## Link to hosted page - https://12farit21.github.io/web_front_final/index.html
